@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b5b1b1;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.infos {
+    display: flex;
+    gap: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 2px solid #020202;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+nav a {
+    color: #181818;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid #020202;
+    padding: 20px;
+}
+
+.poster {
+    width: 240px;
+    height: auto;
+}
+
+.texto {
+    flex: 1;
+    color: #1c1f20;
+}
+
+.destaques {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #020202;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #c9cfce;
+    border: 2px solid #020202;
+    padding: 20px;
+    text-align: center;
+}
+
+.icone {
+    font-size: 40px;
+    margin: 0;
+}
+
+.cta {
+    margin-top: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #1c1f20;
+    color: #e3e7e6;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8b2a24;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.localizacao {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #020202;
+}
+
+.localizacao-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+}
+
+.faq {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #020202;
+}
+
+details {
+    background-color: #c9cfce;
+    border: 2px solid #020202;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #020202;
+    padding: 30px;
+    margin-top: 10px;
+    color: #8b2a24;
+}
+
+footer a {
+    display: block;
+    color: #8b2a24;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #c9cfce;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    header {
+        padding: 10px;
+    }
+    .infos {
+        gap: 30px;
+    }
+    main {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .poster {
+        width: 200px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: #c9cfce;
+        padding: 10px;
+        font-size: 15px;
+    }
+    header {
+        justify-content: center;
+    }
+    .logo {
+        height: 50px;
+    }
+    .infos {
+        display: none;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .localizacao-grid {
+        grid-template-columns: 1fr;
+    }
+    .endereco {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
