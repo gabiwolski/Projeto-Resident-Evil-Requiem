@@ -229,3 +229,11 @@ footer a {
     border: 2px solid #020202;
     text-align: center;
 }
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
